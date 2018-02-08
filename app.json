@@ -1,0 +1,6 @@
+{
+  "name": "cloud-comp-assignment1",
+  "description": "Assignment 1 for Cloud Computing",
+  "repository": "https://github.com/Varun-Gopikrishna/cloud-comp-assignment-1.git",
+  "keywords": ["node", "express", "heroku"]
+}
