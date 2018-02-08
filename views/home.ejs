@@ -2,14 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Click-N-Share Home</title>
+    <title>Add-A-Rem Home</title>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-      <h1>Welcome to the Click-N-Share Homepage!</h1>
-      <p>To add new files to the account, click the '+' button below</p>
-      <a type="button" class="btn-addfiles" href="#"><span class="glyphicon glyphicon-flash"></span>+</a>
+      <h1>Welcome to the Add-A-Reminder Homepage!</h1>
+      <p>To add new reminders to the account, click the button below:</p>
+      <!--<a type="button" class="btn-addRem" href="#"><span class="glyphicon glyphicon-flash"></span>+</a>
+      -->
+      <p>Reminders</p>
+      <ul>
+        <% for(var i=0; i<data.length; i++) {%>
+           <li>Date:<%= data[i].date%>, <%= data[i].reminfo %></li>
+           <form action="/delete" method="post">
+            <input name="id" type="hidden" value="<%= data[i].id %>">
+            <input type="submit" class="ghost-button" value="Delete Reminder">
+           </form>
+        <% } %>
+      </ul>
+
+      <form action="/newnote" method="post">
+        <input type="submit" class="ghost-button" value="New Reminder">
+      </form>
+
       
   </body>
 </html>
