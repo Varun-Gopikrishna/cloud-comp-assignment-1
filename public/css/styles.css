@@ -8,12 +8,14 @@ body {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(95, 175, 212)
-  }
-  .container {
+}
+
+.container {
     width: 600px;
     margin: 0 auto;
-  }
-  fieldset {
+}
+
+fieldset {
     display: block;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
@@ -29,13 +31,15 @@ body {
     border-image-repeat: initial;
     min-width: -webkit-min-content;
     padding: 30px;
-  }
-  .ghost-input, p {
+}
+
+.ghost-input,
+p {
     display: block;
-    font-weight:300;
+    font-weight: 300;
     width: 100%;
     font-size: 25px;
-    border:0px;
+    border: 0px;
     outline: none;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -43,7 +47,7 @@ body {
     box-sizing: border-box;
     color: #4b545f;
     background: #fff;
-    font-family: Open Sans,Verdana;
+    font-family: Open Sans, Verdana;
     padding: 10px 15px;
     margin: 30px 0px;
     -webkit-transition: all 0.1s ease-in-out;
@@ -51,14 +55,16 @@ body {
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
-  }
-  .ghost-input:focus {
-    border-bottom:1px solid #ddd;
-  }
-  .ghost-button {
+}
+
+.ghost-input:focus {
+    border-bottom: 1px solid #ddd;
+}
+
+.ghost-button {
     background-color: rgb(62, 207, 135);
-    border:2px solid rgb(0, 0, 0);
-    padding:10px 30px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 30px;
     width: 100%;
     min-width: 350px;
     -webkit-transition: all 0.1s ease-in-out;
@@ -66,16 +72,18 @@ body {
     -ms-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
-  }
-  .ghost-button:hover {
-    background-color:rgb(53, 218, 135);
-  }
-  p {
+}
+
+.ghost-button:hover {
+    background-color: rgb(53, 218, 135);
+}
+
+p {
     color: rgb(119, 11, 40);
     background-color: rgb(95, 175, 212)
-  }
-  
-  .btn-login {
+}
+
+.btn-login {
     font: bold 20px Arial;
     text-decoration: none;
     background-color: rgb(228, 191, 122);
@@ -85,13 +93,13 @@ body {
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
-  }
+}
 
-  .btn-login:hover {
+.btn-login:hover {
     background-color: rgb(228, 180, 92);
-  }
+}
 
-  .btn-signup {
+.btn-signup {
     font: bold 20px Arial;
     text-decoration: none;
     background-color: rgb(179, 221, 144);
@@ -101,13 +109,13 @@ body {
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
-  }
+}
 
-  .btn-signup:hover {
+.btn-signup:hover {
     background-color: rgb(154, 224, 96);
-  }
+}
 
-  .btn-addfiles {
+.btn-addfiles {
     font: bold 20px Arial;
     text-decoration: none;
     background-color: rgb(182, 109, 211);
@@ -117,11 +125,8 @@ body {
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
-  }
+}
 
-  .btn-addfiles:hover {
+.btn-addfiles:hover {
     background-color: rgb(201, 136, 226);
-  }
-
-  
-  
+}
