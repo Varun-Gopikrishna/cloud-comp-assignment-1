@@ -66,19 +66,12 @@ router.post('/loginuser', function(req, res) {
             res.redirect('/login?err=error');
         }
         else{
-            //console.log(result.rows)
             if(result.rows.length ==0){
                 console.log('User not found');
                 res.redirect('/login?err=error');
             }
             else{
-                // var user_data = JSON.stringify(res.rows);
-                // user_data = JSON.parse(user_data);
-
-                // res.render('login', {
-                //     data: user_data
-                // });
-                console.log(result.rows)
+                //console.log('Login Successful')
                 res.redirect('/home')
                 user = username;
             }
@@ -91,13 +84,6 @@ router.get('/signup', function(req, res) {
 })
 
 router.post('/signup', function(req, res) {
-    //If successful - res.render('home');
-    //if (req.body.username != "VarunG" && req.body.password != "varungpass") {
-    //    res.render('home');
-    //}
-    console.log(req.body.username);
-    console.log(req.body.password);
-
     var username = req.body.username;
     var password =req.body.password;
 
@@ -109,7 +95,7 @@ router.post('/signup', function(req, res) {
             res.redirect("signup?err=error");
         }
         else{
-            console.log(result.rows);
+            //console.log('Sign up successful');
             res.redirect('home');
             user = username;
         }
@@ -121,12 +107,10 @@ router.get('/home', function(req, res) {
     var sql = "SELECT * FROM reminders";
         client.query(sql)
         .then(result => {
-            console.log(result.rows);
-
+            //console.log('Displaying reminders')
             rem_data = JSON.stringify(result.rows);
             rem_data = JSON.parse(rem_data);
 
-            //res.render('home')
             res.render('home', {data: rem_data});
         }).catch(err => {
             console.log(err);
@@ -135,9 +119,6 @@ router.get('/home', function(req, res) {
 })
 
 router.post('/home', function(req, res) {
-    //res.render('home');
-    console.log(user);
-
     if(user != ''){
         var remDate = req.body.remDate;
         var remInfo = req.body.remDesc;
@@ -150,7 +131,7 @@ router.post('/home', function(req, res) {
 
         client.query(sql, uValues)
         .then(result => {
-            console.log(result.rows);
+            //console.log('Added Reminder');
             res.redirect('home');
         }).catch(err => {
             console.log(err);

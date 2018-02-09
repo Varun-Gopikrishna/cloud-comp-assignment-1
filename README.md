@@ -1,44 +1,39 @@
 # Cloud Computing - Assignment 1
 
-The Add-A-Reminder App allows users to log in to a personalised account of their choosing and manage reminders that they would have. 
-The app allows users to register/login to their account, 
+The application developed for this Assignment was the Add-A-Reminder manager application. The application allows the users to register and/or login, based on if they have an existing account or not. Once they have successfully signed in, they are redirected to the home page to add or remove reminders, if they already exist. They will be able to add new  reminders, adding a date and description with it. If needed, they can also remove certain reminders, as they see fit.
 
+It was built using NodeJS and Express, with Postgres as the database service, and SQL commands creating and modifying its contents, as per the needs. For the following assignment, the application was hosted on the cloud service, Heroku, with Postgres working through it to handle with the database servicing. 
 
 
 ## Web App Link
 > https://cloud-comp-a1-nodeapp.herokuapp.com/
 
-## Description
-Being a student is a hurdle. With our heavy courseloads, long assignments, and last minute submissions, there is not enough time to physically buy
-something to eat, or drink. 
+## Setup - Locally
 
-In response, we created the application that solves this issue, the BringMeFood app. This app allows the individuals to either play the role of a wanter, the person requesting for food, or a bringer, the person buying the food. The wanter would be required to create a food order, and once done, would be required to either send the desired order to bringers nearby based on his/her location or based on the custom code provided by the bringer. A payment option would allow the wanter to pay for their order. Once this is done, the desired location of set and the wanter can get ready to receive the food from the set location
+### What to Install
+- NodeJS/Express
+- PostgreSQL
 
-## Installing
-Though the following can be developed more in the future and shown on the Google Play Store, at the moment, it is currently only available throuhg this repository. 
+1. NodeJS: https://nodejs.org
+2. PostgreSQL: `npm install pg --save`
+3. Addtionally with this, the others would need to be setup in similar ways using npm: `npm install ejs --save` and `npm install express --save`, etc.
+4. After this, the files can be downloaded:
 
-To get started, do the following steps:
-1. Clone the repository on to your local machine.
-2. Open Android Studio
-3. Clean and build the project
-4. Run it.
+```js
+git clone git@github.com:Varun-Gopikrishna/cloud-comp-assignment-1.git
+cd cloud-comp-assignment-1
+npm install
+npm start
+```
+Then go to `localhost:3000`
 
-## Paypal Sandbox Testing 
-> email: tester1@bringmefood.com<br/>password: bringmefood<br/><br/>
-> email: tester2@bringmefood.com<br/>	password: bringmefood
 
-## Test User
->login Email: rob@bob.com <br/> Password: 123456
 
-## Usage Instructions
-Thank you for downloading the BringMeFood App. Once you open the app, you have te ability to sign up using 3 methods.
-1. Sign up Form
-2. Gmail Account
-3. Facebook
 
-Once you are logged in you can add money to your wallet using the navigation tab on the top left. After you add money to the wallet, you can either request others using the app to bring you food or be a getter yourself and get food for others.
 
-<img src="/screencaps/Screenshot_1513453116.png" width="350">        <img src="/screencaps/Screenshot_1513453155.png" width="350">
-<img src="/screencaps/Screenshot_1513453161.png" width="350">        <img src="/screencaps/Screenshot_1513453167.png" width="350">
+
+
+ 
+
 
 
